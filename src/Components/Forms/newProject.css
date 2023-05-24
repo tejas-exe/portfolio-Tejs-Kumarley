@@ -1,0 +1,26 @@
+.new-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-Button {
+  background-color: #f0f0f0;
+  color: #e83b83;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin-top:100px;
+}
+
+.upload-Button:hover {
+  background-color: #610c0c;
+}
+
+.imge-preview{
+  height: 100px;
+  margin:10px;
+  width:545px;
+}

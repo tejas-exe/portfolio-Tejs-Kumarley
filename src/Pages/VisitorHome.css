@@ -1,0 +1,348 @@
+.introDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.bannerList {
+  width: 100%;
+  margin-top: -60px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+.project-root {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: black;
+  padding: 10px;
+  background-color: #e55288;
+  border-radius: 4px;
+  width: 81%;
+  align-items: center;
+  justify-items: center;
+}
+
+.typing-div {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  background: linear-gradient(55deg, #ff8a00, #e52e71, #5f72be);
+  background-size: 200% 200%;
+  border-radius: 4px;
+  animation: gradientAnimation 8s linear infinite;
+  padding: 20px;
+  width: 90%;
+  margin: 20px;
+  height: 10%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.637);
+}
+@media (max-width: 421px) {
+  .introDiv {
+    width: 115%;
+  }
+  .banner-Image {
+    margin-top: -38px;
+    width: 200px;
+    /* opacity: 0.8; */
+  }
+  .project-root {
+    margin-top: 65px;
+    width: 95%;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.637);
+    align-items: center;
+    justify-items: center;
+  }
+  .vSkill {
+    width: 120%;
+  }
+}
+@media screen and (max-width: 816px) and (min-width: 421px) {
+  .banner-Image {
+    /* margin-top: -38px; */
+    width: 100%;
+    /* opacity: 0.8; */
+  }
+  .contact-div {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    background: linear-gradient(55deg, #efe3d6, #e4c0ce, #a8acba);
+    background-size: 200% 200%;
+    border-radius: 4px;
+    animation: gradientAnimation 8s linear infinite;
+    padding: 20px;
+    width: 90%;
+    margin: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.637);
+    z-index: -60;
+  }
+}
+
+.typing-div:hover {
+  animation-play-state: paused;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* @media screen and (min-width: 500px) {
+  .banner-Image {
+    margin-top: -65px;
+  }
+
+} */
+
+.banner-Image {
+  color: white;
+  animation: bounce 8s infinite;
+  /* margin-top:-65px; */
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.vSkill {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  width: 90%;
+  border-radius: 4px;
+  width: 82%;
+  border-radius: 4px;
+  margin-top: 5px;
+  background-color: rgb(157, 196, 196);
+}
+
+.pagination {
+  margin-top: 6px;
+}
+
+.pagination-btn {
+  color: black;
+  background-color: #f4c188;
+  height: 40px;
+  border-radius: 8px;
+  border-style: none;
+}
+
+.button-Style {
+  margin-top: -25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #f4c188;
+  width: 82%;
+  border-radius: 8px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.contact-div {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  background: linear-gradient(55deg, #efe3d6, #e4c0ce, #a8acba);
+  background-size: 200% 200%;
+  border-radius: 4px;
+  animation: gradientAnimation 8s linear infinite;
+  padding: 20px;
+  width: 90%;
+  margin: 20px;
+  margin-top: -50px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.637);
+  z-index: -60;
+}
+
+.next-img {
+  margin-top: 30px;
+  margin-left: -20px;
+  width: 80%;
+}
+.contactMeContent {
+  background-color: white;
+  margin-top: 10px;
+  margin-left: -40px;
+  width: 110%;
+  border-radius: 4px;
+}
+
+/* glassInput.css */
+
+.glass-input {
+  position: relative;
+  display: inline-block;
+}
+
+.glass-input input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Box shadow for the glass effect */
+}
+
+.glass-input::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 5px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Slightly transparent background */
+  pointer-events: none; /* Allow interaction with the input field */
+}
+
+.contentOrganization {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+@media (max-width: 768px) {
+  .contentOrganization {
+    margin: 5px;
+    width: 90%;
+  }
+  .contactMeContent {
+    width: 160%;
+    margin-left: -70px;
+  }
+}
+.txtArea {
+  width: 83%;
+}
+.button-connect {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.button-connect {
+  background: linear-gradient(45deg, #ff8a00, #e52e71, #5f72be);
+  background-size: 200% 200%;
+  border-radius: 4px;
+  opacity: 0.8;
+  animation: gradientAnimation 8s linear infinite;
+}
+
+.button-connect:hover {
+  animation-play-state: paused;
+}
+
+@media (min-width: 769px) {
+  .dist-ipt {
+    margin: 30px;
+    width: 100%;
+  }
+}
+
+.dist-ipt {
+  margin-left: 15px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: flex-start;
+  justify-self: flex-start;
+}
+
+.social-link {
+  margin: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.social-link i {
+  font-size: 20px;
+}
+
+.social-link:hover {
+  background-color: #555;
+}
+
+.neon-button {
+  margin: 10px;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(79, 16, 205, 0.7);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.neon-button:hover {
+  box-shadow: 0 0 20px rgba(13, 232, 13, 0.9);
+}
+
+.linkInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* CSS code for screens between 910px and 421px */
+
+@media (max-width: 910px) and (min-width: 421px) {
+  .bannerList {
+
+    margin-top: -36px;
+
+  }
+}

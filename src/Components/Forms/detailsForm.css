@@ -1,0 +1,9 @@
+.no-resize {
+  resize: none;
+}
+.form-myDetails{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+}
+

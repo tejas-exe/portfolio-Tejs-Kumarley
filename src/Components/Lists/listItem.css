@@ -1,0 +1,48 @@
+.list-item {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.project-name {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  padding: 10px;
+}
+
+.list-item img {
+  border-radius: 20px;
+  opacity: 0.8;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-pix{
+  width: 295px; /* Adjust the width to your desired value */
+  height: 170px; /* Adjust the height to your desired value */
+  border-radius: 20px;
+}
+
+.updateButton{
+  background-color:rgb(81, 126, 81);
+  width: 90%;
+  margin-left:20px;
+  border-style: none;
+  border-radius:4px;
+  height: 25px
+}
+.deleteButton{
+  background-color: rgb(248, 76, 76);
+  width:90%;
+  margin-left:20px;
+  border-style: none;
+  border-radius:4px;
+  height: 25px;
+}

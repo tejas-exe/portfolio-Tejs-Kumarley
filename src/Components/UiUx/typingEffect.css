@@ -1,0 +1,21 @@
+.my-Details {
+  /* width: 70%; */
+  font-weight: 100;
+  font-family: "Playfair Display SC", serif;
+}
+
+@media (max-width:421px){
+  .my-Details{
+    width:200%;
+  }
+  }
+
+  @media only screen and (min-width: 993px) {
+    .my-Details {
+      width: 100%;
+      font-weight: 100;
+      font-size:22px;
+      font-family: "Playfair Display SC", serif;
+    }
+    
+  }

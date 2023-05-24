@@ -1,0 +1,56 @@
+.visitor-project-list {
+  justify-self: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  background: linear-gradient(55deg, #d8b389, #e776a0, #72bbcf);
+  background-size: 200% 200%;
+  animation: gradientAnimation 8s linear infinite;
+  box-shadow: 1px 1px 1px rgba(52, 51, 51, 0.3);
+  border-radius: 4px;
+  width:80%;
+}
+.projectInfo-containor {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imgProject {
+  margin-top: 10px;
+  width: 90%;
+  height: 200px;
+  border-radius: 2px;
+  opacity: 0.9;
+}
+
+.projectDetails {
+  margin: 20px;
+}
+
+.project-visit {
+  border-style: none;
+  width: 90%;
+  height: 50px;
+  margin:5px;
+  margin-bottom: 20px;
+ border-radius:4px;
+  background: linear-gradient(55deg, #d8b38900, #e7769f00, #72bbcf00);
+  background-size: 200% 200%;
+
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 421px) {
+  .visitor-project-list {
+    justify-self: center;
+    width:110%;
+    margin-left:60px;
+  }
+}
+@media screen and (max-width: 816px) and (min-width: 421px) {
+  .visitor-project-list {
+    justify-self: center;
+    width:80%;
+  }
+}

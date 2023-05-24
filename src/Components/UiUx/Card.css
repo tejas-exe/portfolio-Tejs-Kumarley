@@ -1,0 +1,13 @@
+.card-componant {
+  width: 99%;
+  background-image: linear-gradient(
+    45deg,
+    rgb(183, 237, 237),
+    rgb(252, 214, 221),
+    rgb(236, 240, 183)
+  );
+  border: 1px solid rgba(0, 0, 0, 0.155);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}

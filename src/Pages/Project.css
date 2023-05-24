@@ -1,0 +1,37 @@
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.project-elements {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh; /* Adjust the height of the grid container as needed */
+}
+
+@media (max-width: 421px) {
+  .project-elements {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh; /* Adjust the height of the grid container as needed */
+  }
+}
+@media screen and (max-width: 816px) and (min-width: 421px) {
+  .project-elements {
+   margin-left:30px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh; /* Adjust the height of the grid container as needed */
+  }
+}

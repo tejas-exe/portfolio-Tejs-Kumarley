@@ -1,0 +1,34 @@
+/* ErrorPage.css */
+
+.error-page {
+  position: relative;
+  height: 100vh;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Add your desired background styles */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-top: 30vh;
+  animation: bounceIn 1s ease-in-out; /* Example animation using Animate.css */
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

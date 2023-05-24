@@ -1,0 +1,10 @@
+.vSkill{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:rgb(157, 196, 196);
+}
+.nav-Link{
+  text-decoration: none;
+  color: black;
+}

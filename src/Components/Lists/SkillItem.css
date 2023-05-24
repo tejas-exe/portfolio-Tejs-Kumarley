@@ -1,0 +1,12 @@
+.skill-container{
+  background-color:rgb(250, 247, 242);
+  border-radius: 20px;
+  margin:10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.div-cursor{
+  cursor: pointer;
+}
